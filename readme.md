@@ -19,5 +19,4 @@ A responsive web application for managing your book collection. The app allows y
 
 ## Live Demo
 
-live version of the project here: [My Library](#mohamednaeemm.github.io/my-library)
-
+live version of the project here: [My Library](https://mohamednaeemm.github.io/my-library)
