@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Library</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=23664&format=png&color=000000" type="image/png">
 </head>
 <body>
     <div class="container">
         <div class="container-head">
-            <h1>My Library</h1>
-            <p>All the Books I read or I'll read.</p>
-            <button>Add a Book...</button>
+            <h1>My Library <img src="https://img.icons8.com/?size=100&id=23664&format=png&color=000000" alt="library icon"></h1>
+            <p>Welcome to your own personal library, a collection of books where you can add new books and mark those that you have read
+            </p>
+            <button id="addBookButton">Add a Book... <img src="https://img.icons8.com/?size=100&id=42690&format=png&color=000000" alt="book icon"></button>
         </div>
-        <div class="container-body">
-            
+        <div class="container-body" id="booksContainer">
         </div>
+    </div>
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <div class="modal-content-heading">
+                <h2>Add a Book</h2>
+                <span class="close" id="close">&times;</span>
+            </div>
+            <hr>
+            <div class="modal-content-body">
+                <p>Fill the form below to add a book to your library.</p>
+                <form action="">
+                    <label for="bookName">Title:</label>
+                    <input type="text" id="bookName" name="bookName" required>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author">
+                    <label for="bookCategory">Category:</label>
+                    <!-- HTML -->
+                    <select id="bookCategory" name="bookCategory" required>
+                        <option value="Business">Business</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Health">Health</option>
+                        <option value="History">History</option>
+                        <option value="Psychology">Psychology</option>
+                        <option value="Romantic">Romantic</option>
+                        <option value="Science">Science</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="readStatusBook">Read Status:</label>
+                    <select id="readStatusBook" name="read-status" required>
+                        <option value="already-read">Already Read</option>
+                        <option value="not-yet">Not Yet</option>
+                    </select>
+                    <button type="submit" id="saveBookButton" >Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
